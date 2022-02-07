@@ -34,6 +34,8 @@ for i in range(0, 1000):
 std_deviation = statistics.stdev(mean_list)
 print("Standard deviation of sampling distribution:- ", std_deviation)
 
+z_score = (mean_list - mean) /std_deviation
+print (f"The z score is = {z_score} ")
 
 first_std_dev_start, first_std_dev_end = mean - std_deviation, mean + std_deviation
 second_std_dev_start, second_std_dev_end = mean - (2 * std_deviation), mean + (
